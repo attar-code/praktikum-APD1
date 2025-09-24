@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="simulasi"/>
+        <attribute name="authors" value="Arryad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-23 01:44:49 PM"/>
+        <attribute name="created" value="QXJyeWFkO0xBUFRPUC1ETzhUMk9TUTsyMDI1LTA5LTIzOzEwOjQyOjM0IEFNOzI5NjY="/>
+        <attribute name="edited" value="QXJyeWFkO0xBUFRPUC1ETzhUMk9TUTsyMDI1LTA5LTIzOzAxOjQ0OjQ5IFBNOzE7MzA5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="suhu" type="Integer" array="True" size="6"/>
+            <declare name="F1, F2, K3, K4, R5, R6, jumlah, rata2, NIM" type="Real" array="False" size=""/>
+            <declare name="bolean" type="Boolean" array="False" size=""/>
+            <assign variable="NIM" expression="46"/>
+            <assign variable="suhu[0]" expression="27"/>
+            <assign variable="suhu[1]" expression="33"/>
+            <assign variable="suhu[2]" expression="46"/>
+            <assign variable="suhu[3]" expression="55"/>
+            <assign variable="suhu[4]" expression="67"/>
+            <assign variable="suhu[5]" expression="92"/>
+            <assign variable="F1" expression="9/5 * suhu[0] + 32"/>
+            <assign variable="F2" expression="9/5 * suhu[1] + 32"/>
+            <assign variable="K3" expression="suhu[2] + 273.15"/>
+            <assign variable="K4" expression="suhu[3] + 273.15"/>
+            <assign variable="R5" expression="4/5 * suhu[4]"/>
+            <assign variable="R6" expression="4/5 * suhu[5]"/>
+            <assign variable="jumlah" expression="F1 + F2 + K3 + K4 + R5 + R6"/>
+            <assign variable="rata2" expression="jumlah/6"/>
+            <assign variable="bolean" expression="NIM &lt; rata2"/>
+            <output expression="&quot;[&quot; &amp; suhu[0] &amp; &quot;, &quot; &amp; suhu[1] &amp; &quot;, &quot; &amp; suhu[2] &amp; &quot;, &quot; &amp; suhu[3] &amp; &quot;, &quot; &amp; suhu[4] &amp; &quot;, &quot; &amp; suhu[5] &amp; &quot;]&quot;" newline="True"/>
+            <output expression="&quot;suhu[-4:]&quot;" newline="True"/>
+            <output expression="&quot;[&quot; &amp; suhu[2] &amp; &quot;, &quot; &amp; suhu[3] &amp; &quot;, &quot; &amp; suhu[4] &amp; &quot;, &quot; &amp; suhu[5] &amp; &quot;]&quot;" newline="True"/>
+            <output expression="&quot;NIM saya adalah : &quot; &amp; NIM" newline="True"/>
+            <output expression="&quot;Celcius To Fahrenheit&quot;" newline="True"/>
+            <output expression="suhu[0] &amp; &quot; = &quot; &amp; F1" newline="True"/>
+            <output expression="suhu[1] &amp; &quot; = &quot; &amp; F2" newline="True"/>
+            <output expression="&quot;Celcius To Kelvin&quot;" newline="True"/>
+            <output expression="suhu[2] &amp; &quot; = &quot; &amp; K3" newline="True"/>
+            <output expression="suhu[3] &amp; &quot; = &quot; &amp; K4" newline="True"/>
+            <output expression="&quot;Celcius To Reamur&quot;" newline="True"/>
+            <output expression="suhu[4] &amp; &quot; = &quot; &amp; R5" newline="True"/>
+            <output expression="suhu[5] &amp; &quot; = &quot; &amp; R6" newline="True"/>
+            <output expression="&quot;Total semua adalah : &quot; &amp; jumlah" newline="True"/>
+            <output expression="&quot;rata-rata : &quot; &amp; rata2" newline="True"/>
+            <output expression="&quot;NIM &lt; rata-rata : &quot; &amp; bolean" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

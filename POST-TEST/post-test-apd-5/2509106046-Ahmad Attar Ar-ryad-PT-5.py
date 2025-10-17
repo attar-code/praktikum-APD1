@@ -127,8 +127,7 @@ while pilih_menu:
                 |================|
                 | 1. LIHAT DATA  |
                 | 2. UPDATE DATA |
-                | 3. HAPUS DATA  |
-                | 4. KEMBALI     |
+                | 3. KEMBALI     |
                 |================|
                                 """)
                                 admin2 = input("ADMIN MAU NGAPAIN? ")

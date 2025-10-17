@@ -81,8 +81,7 @@ while pilih_menu:
                 |=============|
                 | 1. REGISTER |
                 | 2. LOGIN    |
-                | 3. CEK DATA |
-                | 4. KELUAR   |
+                | 3. KELUAR   |
                 |=============|
                                 """)
             akun2 = input("NOMOR BERAPA : ")
@@ -127,7 +126,8 @@ while pilih_menu:
                 |================|
                 | 1. LIHAT DATA  |
                 | 2. UPDATE DATA |
-                | 3. KEMBALI     |
+                | 3. HAPUS DATA  |
+                | 4. KEMBALI     |
                 |================|
                                 """)
                                 admin2 = input("ADMIN MAU NGAPAIN? ")

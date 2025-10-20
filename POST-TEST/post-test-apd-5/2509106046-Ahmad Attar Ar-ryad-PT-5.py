@@ -171,10 +171,12 @@ while pilih_menu:
                                 elif admin2 == '3':
                                         if len(pemilik) == 0:
                                             print("====BELUM ADA NASABAH====")
-                                        for i in pemilik:
-                                            hapus = int(input("DATA NOMOR BERAPA ? "))
-                                            del i[hapus-1]
-                                            print("data berhasil dihapus")
+                                        hapus = int(input("DATA NOMOR BERAPA ? "))
+                                        if 1 <= hapus <= len(pemilik):
+                                            del pemilik[hapus-1]
+                                            print("Data berhasil dihapus!")
+                                        else:
+                                            print("Nomor nasabah tidak valid!")
                                 elif admin2 == '4':
                                     print("===ANDA TELAH LOG OUT===")
                                     akun1 = False

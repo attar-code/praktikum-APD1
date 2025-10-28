@@ -195,6 +195,7 @@ while pilih_menu:
                                 elif admin2 == '3':
                                         if len(pemilik) == 0:
                                             print("====BELUM ADA NASABAH====")
+
                                         hapus = int(input("\nDATA NOMOR BERAPA YANG INGIN DIHAPUS? "))
                                         daftar_key = list(pemilik.keys())
 

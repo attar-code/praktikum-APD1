@@ -58,7 +58,7 @@ def AfterLogin():
         | 2. UPDATE DATA    |
         | 3. JUMLAH NASABAH |
         | 4. HAPUS DATA     |
-        | 5. KEMBALI        |
+        | 5. LOG OUT        |
         |===================|
                                     """)
         admin2 = input("ADMIN MAU NGAPAIN? ")

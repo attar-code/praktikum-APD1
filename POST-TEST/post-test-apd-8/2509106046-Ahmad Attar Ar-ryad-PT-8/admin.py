@@ -81,7 +81,7 @@ def pil1():
                                         break
 
                                 if cek:
-                                    os.system("cls || clear") 
+                                    clear()
                                     print("======USERSERNAME TELAH DIGUNAKAN======\n")
 
                                 else:
